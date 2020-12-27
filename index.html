@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation using JS | Almeida Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h2>Contact Us</h2>
+        <p>Contact us for a quote, help ot to join the team.</p>
+        <!-- <div id="pesan-error"></div> -->
+        <form action="" id="form" onsubmit="return validate();">
+            <div id="pesan_error">
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name . . .">
+                    </div>
+                    <div class="input-field">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject . . .">
+                    </div>
+                    <div class="input-field">
+                        <label for="phone">Phone</label>
+                        <input type="number" name="phone" id="phone" placeholder="Phone . . .">
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email . . .">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message . . ." cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-area">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
